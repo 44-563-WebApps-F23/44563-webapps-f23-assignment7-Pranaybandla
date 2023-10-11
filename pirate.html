@@ -70,16 +70,16 @@
 </div>
 <script>
     var ids = [];
+    for (var i = 0; i < 25; i++) {
+          ids.push("img" + i);
+        }
         var checkCount = 0;
         var penalty = 0;
         var lastCheck = 0;
         var treasureLocation = 5;
         var trapLocation = 18;
         var gameOver = false;
-        for (var i = 0; i < 25; i++) {
-          ids.push("img" + i);
-        }
-
+        
         function check(position) {
           if (gameOver) return;
       
