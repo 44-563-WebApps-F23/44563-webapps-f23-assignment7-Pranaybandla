@@ -25,49 +25,118 @@
     <div class="container mt-5">
     <div class="row text-center">
     <h2>Find the treasure by Pranay Kumar Bandla</h2>
-    <div class="col-sm-3" style="background-color:rgb(197, 249, 148) ;"> Click on the locations to search for treasure, beware the traps</div>
+    <div class="col-sm-3" style="background-color:rgb(221, 248, 195) ;"> Click on the locations to search for treasure, beware the traps</div>
     <div id="location" class="col-sm-2" style="background-color:lavender;">Number of locations checked is zero.</div>
-    <div id="penalty" class="col-sm-2" style="background-color:rgb(197, 249, 148);">Penalty is zero.</div>
-    <div class="col-sm-2" style="background-color:lavender;">Click for help.</div>
+    <div id="penalty" class="col-sm-2" style="background-color:rgb(241, 98, 41);">Penalty is zero.</div>
+    <div class="col-sm-2" style="background-color:lavender;" id="helpclick">Click for help.</div>
     <div id="help" class="col-sm-2" style="background-color:rgb(197, 249, 148);">Help report.</div>
 </div>
 <div class="treasurehuntcontainer" class="container">
     <div class="row">
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-md-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img0" onclick="check(0)" height="100px" width="100px"></div>
+        <div class="col-md-2" ><img src="starting.jpg" id="img1" onclick="check(1)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img2" onclick="check(2)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img3" onclick="check(3)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img4" onclick="check(4)" height="100px" width="100px"></div>
     </div>
     <div class="row">
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-md-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img5" onclick="check(5)" height="100px" width="100px"></div>
+        <div class="col-md-2" ><img src="starting.jpg" id="img6" onclick="check(6)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img7" onclick="check(7)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img8" onclick="check(8)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img9" onclick="check(9)" height="100px" width="100px"></div>
     </div>
     <div class="row">
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-md-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img10" onclick="check(10)" height="100px" width="100px"></div>
+        <div class="col-md-2" ><img src="starting.jpg" id="img11" onclick="check(11)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img12" onclick="check(12)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img13" onclick="check(13)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img14" onclick="check(14)" height="100px" width="100px"></div>
     </div>
     <div class="row">
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-md-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img15" onclick="check(15)" height="100px" width="100px"></div>
+        <div class="col-md-2" ><img src="starting.jpg" id="img16" onclick="check(16)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img17" onclick="check(17)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img18" onclick="check(18)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img19" onclick="check(19)" height="100px" width="100px"></div>
     </div>
     <div class="row">
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-md-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
-        <div class="col-sm-2" ><img src="starting.jpg" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img20" onclick="check(20)" height="100px" width="100px"></div>
+        <div class="col-md-2" ><img src="starting.jpg" id="img21" onclick="check(21)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img22" onclick="check(22)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img23" onclick="check(23)" height="100px" width="100px"></div>
+        <div class="col-sm-2" ><img src="starting.jpg" id="img24" onclick="check(24)" height="100px" width="100px"></div>
     </div>
 </div>
+<script>
+    var ids = [];
+        var checkCount = 0;
+        var penalty = 0;
+        var lastCheck = 0;
+        var treasureLocation = 5;
+        var trapLocation = 18;
+        var gameOver = false;
+        for (var i = 0; i < 25; i++) {
+          ids.push("img" + i);
+        }
 
+        function check(position) {
+          if (gameOver) return;
+      
+          var id = ids[position];
+          var img = document.getElementById(id);
+      
+          if (position === treasureLocation) {
+            img.src = "tressure.jpg";
+            gameOver = true;
+            penalty -= 3;
+          } else if (position === trapLocation) {
+            img.src = "trap.webp";
+            gameOver = true;
+            penalty += 4;
+          } else {
+            img.src = "pirate.jpg";
+            checkCount++;
+            penalty++;
+          }
+      
+          document.getElementById("location").textContent = "Number of locations checked is " + checkCount;
+          document.getElementById("penalty").textContent = "Penalty is " + penalty;
+      
+          lastCheck = position;
+        }
+
+        function help() {
+          if (gameOver) 
+          return;
+      
+          var treasureRow = Math.floor(treasureLocation / 5);
+          var treasureCol = treasureLocation % 5;
+          var lastRow = Math.floor(lastCheck / 5);
+          var lastCol = lastCheck % 5;
+      
+          var rowDiff = Math.abs(treasureRow - lastRow);
+          var colDiff = Math.abs(treasureCol - lastCol);
+      
+          if ((rowDiff === 1 && colDiff === 0) || (rowDiff === 0 && colDiff === 1)) 
+          {
+            document.getElementById("help").textContent = "Can smell it";
+          } 
+          else if ((rowDiff === 2 && colDiff === 0) || (rowDiff === 0 && colDiff === 2)) 
+          {
+            document.getElementById("help").textContent = "Close Matie";
+            penalty += 2;
+          }
+           else 
+           {
+            document.getElementById("help").textContent = "Step faster";
+            penalty += 2;
+          }
+      
+          document.getElementById("penalty").textContent = "Penalty is " + penalty;
+        }
+      
+        document.getElementById("helpclick").onclick = help;
+</script>
 </body>
 </html>
