@@ -8,6 +8,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 30px;
+        }
+        h2 {
+            background-color: aqua;
+            color: black;
+        }
+        div {
+            background-color: antiquewhite;
+        }
+  </style>
 </head>
 <body>
 <h2>Pranay Kumar Bandla speed check</h2>
@@ -16,14 +29,33 @@
  <div id="target">Your time:</div>
  <div id="counter">Count:</div>
 
- <button type="button">Start Timer</button>
- <button type="button" onclick="recordTime()">React</button>
+ <button type="button" class="btn btn-success" onclick="startTime()">Start Timer</button>
+ <button type="button" class="btn btn-warning" onclick="recordTime()">React</button>
 <script>
     let reactTime;
     function recordTime() {
             reactTime = Date.now();
             console.log('React Time:', reactTime);
         }
+
+    function startTime() {
+      for (let i = 0; i < 9; i++) {
+        setTimeout(() => {
+          document.getElementById('counter').innerHTML = i;
+        }, (8 - i) * 1000);
+      }
+
+      setTimeout(() => {
+        if (reactTime === undefined) {
+          document.getElementById('target').innerHTML = 'Too Slow';
+        } else {
+          const endTime = Date.now();
+          const elapsed = endTime - reactTime;
+          document.getElementById('target').innerHTML = 'Time was ' + elapsed + ' milliseconds';
+        }
+      }, 8000);
+    }
+
 </script>
 </body>
 </html>
