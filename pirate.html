@@ -26,7 +26,7 @@
     <div class="row text-center">
     <h2>Find the treasure by Pranay Kumar Bandla</h2>
     <div class="col-sm-3" style="background-color:rgb(221, 248, 195) ;"> Click on the locations to search for treasure, beware the traps</div>
-    <div id="location" class="col-sm-2" style="background-color:lavender;">Number of locations checked is zero.</div>
+    <div id="locations" class="col-sm-2" style="background-color:lavender;">Number of locations checked is zero.</div>
     <div id="penalty" class="col-sm-2" style="background-color:rgb(241, 98, 41);">Penalty is zero.</div>
     <div class="col-sm-2" style="background-color:lavender;" id="helpclick">Click for help.</div>
     <div id="help" class="col-sm-2" style="background-color:rgb(197, 249, 148);">Help report.</div>
@@ -100,7 +100,7 @@
             checkCount++;
             penalty++;
           }
-          document.getElementById("location").textContent = "Number of locations checked is " + checkCount;
+          document.getElementById("locations").textContent = "Number of locations checked is " + checkCount;
           document.getElementById("penalty").textContent = "Penalty is " + penalty;
       
           lastCheck = position;
